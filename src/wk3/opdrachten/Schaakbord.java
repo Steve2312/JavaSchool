@@ -2,7 +2,7 @@ package wk3.opdrachten;
 
 public class Schaakbord {
     private final Schaakstuk[][] bord = new Schaakstuk[8][8];
-    static String[][] legenda = new String[8][8];
+    String[][] legenda = new String[8][8];
 
     public Schaakbord()
     {
@@ -12,8 +12,7 @@ public class Schaakbord {
     }
     public void maakNieuwBordOp(Schaakstuk[][] bord)
     {
-        String[] zwarte_stukken = new String[] {"Toren", "Paard", "Loper", "Dame", "Koning", "Loper", "Paard", "Toren"};
-        String[] witte_stukken = new String[] {"Toren", "Paard", "Loper", "Koning", "Dame", "Loper", "Paard", "Toren"};
+        String[] stukken = new String[] {"Toren", "Paard", "Loper", "Dame", "Koning", "Loper", "Paard", "Toren"};
 
         // Maak alle pionnen
         for(int i = 0; i < 8; i++)
@@ -21,8 +20,8 @@ public class Schaakbord {
             bord[1][i] = new Schaakstuk("Pion", "Zwart");
             bord[6][i] = new Schaakstuk("Pion", "Witte");
 
-            bord[0][i] = new Schaakstuk(zwarte_stukken[i], "Zwart");
-            bord[7][i] = new Schaakstuk(witte_stukken[i], "Witte");
+            bord[0][i] = new Schaakstuk(stukken[i], "Zwart");
+            bord[7][i] = new Schaakstuk(stukken[i], "Witte");
         }
     }
 
