@@ -12,7 +12,7 @@ public class Student {
         return cijfer;
     }
 
-    public int setCijfer(double cijfer) {
+    public void setCijfer(double cijfer) {
         this.cijfer = cijfer;
     }
 }
