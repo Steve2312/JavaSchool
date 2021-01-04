@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>270</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Persoon
+--
+#naam: String
+--
+&lt;&lt;create&gt;&gt; Persoon(
+				-naam: String): Persoon
+--
++getNaam(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>530</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Klant
+--
+-mijnVouchers[]: Vouchers</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>530</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Servicedeskmedewerker
+--
+-email_adres: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>370</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;190.0;80.0;190.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>370</y>
+      <w>190</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>170.0;10.0;170.0;80.0;10.0;80.0;10.0;160.0</additional_attributes>
+  </element>
+</diagram>

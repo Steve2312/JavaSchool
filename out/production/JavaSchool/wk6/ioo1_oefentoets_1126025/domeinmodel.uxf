@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>270</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Autoverhuurcatalogus
+--
+-autos[]: Auto</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>380</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Servicedeskmedewerker
+--
+-naam: String
+-email_adres: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>260</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Auto
+--
+-merk: String
+-verhuurplaats: String
+-dagprijs: double
+-verhuurorganisatie: Verhuurorganisatie</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>580</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Klant
+--
+-naam: String
+-mijnVouchers[]: Vouchers</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>580</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Voucher
+--
+-verhuurdatum: String
+-aantal_dagen: Integer
+-totaalbedrag: double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>490</y>
+      <w>250</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Verhuurorganisatie
+--
+-naam: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>270</y>
+      <w>320</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+m2=0..100
+bestaat uit &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;300.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>350</y>
+      <w>110</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+bestaat uit &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>580</y>
+      <w>360</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+m2=0..10
+bestaat uit &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+</diagram>
