@@ -30,6 +30,7 @@ public class Klant extends Persoon{
     }
 
     public int getAantalAutosVerhuurd() {
+        aantalAutosVerhuurd = 0;
         for(Voucher voucher : mijnVouchers) {
             if (voucher != null) {
                 aantalAutosVerhuurd++;
